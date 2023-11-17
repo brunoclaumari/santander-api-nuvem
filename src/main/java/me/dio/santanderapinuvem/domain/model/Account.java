@@ -24,10 +24,11 @@ public class Account implements Serializable{
 	
 	private String agency;
 	
-	@Column(precision = 2, scale = 13)
+	// 99999999999,99
+	@Column(precision = 13, scale = 2)
 	private BigDecimal accountBalance;
 	
-	@Column(precision = 2, scale = 13)
+	@Column(precision = 13, scale = 2)
 	private BigDecimal accountLimit;
 	
 	public Account() {		
