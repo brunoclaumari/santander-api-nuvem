@@ -7,5 +7,7 @@ import me.dio.santanderapinuvem.domain.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
+	
+	boolean existsByAccountNumber(String accountNumber);
 
 }

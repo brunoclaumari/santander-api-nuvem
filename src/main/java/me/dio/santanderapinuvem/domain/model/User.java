@@ -43,8 +43,7 @@ public class User implements Serializable {
 	@JoinTable(
 			name = "tb_user_news", 
 			joinColumns = @JoinColumn(name = "user_id",foreignKey = @ForeignKey(name = "FK_user_news")), 
-			inverseJoinColumns = @JoinColumn(name = "news_id"))
-	
+			inverseJoinColumns = @JoinColumn(name = "news_id"))	
 	private List<News> news;
 	
 	public User() {
