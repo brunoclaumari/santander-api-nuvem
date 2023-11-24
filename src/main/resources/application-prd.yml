@@ -6,9 +6,9 @@ spring:
   jpa:    
     open-in-view: false
     hibernate:
-      ddl-auto: validate #validate | update | create | create-drop
+      ddl-auto: validate
 bruno:
   openapi:
     dev-url: http://localhost:8080
-    prod-url: https://naoseiainda-api.com                     
+    prod-url: https://santander-api-2023-prd.up.railway.app                     
           
