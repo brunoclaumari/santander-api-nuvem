@@ -25,6 +25,12 @@ dependencies {
 
 }
 
+tasks.jar {
+	manifest {
+		attributes["Main-Class"] = "me/dio/santanderapinuvem/SantanderApiNuvemApplication"
+	}
+}
+
 
 tasks.named('bootBuildImage') {
 	builder = 'paketobuildpacks/builder-jammy-base:latest'
